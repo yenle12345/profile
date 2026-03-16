@@ -18,30 +18,29 @@
             <h1>TRANG CÁ NHÂN SINH VIÊN</h1>
             <div class="profile">
 
-                <img src="images/avatar.jpg" class="avatar">
+                <img src="images/avatar.jpg" class="avatar" id='avatar'>
 
                 <div class="info">
 
                     <h2>BẢNG THÔNG TIN</h2>
-                    <p><span>Tên:</span> Lê Thị Hồng Yến</p>
-                    <p><span>Lớp:</span> KHDL19B</p>
-                    <p class='mssv'><span>MSSV</span>: 23712271</p>
-                    <p><span>Email:</span> yenle.201295@gmail.com</p>
+                    <p id="full-name"><span>Tên:</span> Lê Thị Hồng Yến</p>
+                    <p class='mssv' id='student-id'><span>MSSV</span>: 23712271</p>
+                    <p id='email'><span>Email:</span> yenle.201295@gmail.com</p>
                     <p><span>Ngành:</span> Khoa học dữ liệu</p>
                     <p><span>Trường:</span> Đại học công nghiệp TP.HCM</p>
-                    <p><span>Sở thích:</span>
+                    <p id='hobbies'><span>Sở thích:</span>
                         <ul>
                             <li>Xem phim</li>
                             <li>Nghe nhạc</li>
                         </ul>
                     </p>
-                    <p>
+                    <p id='github-link'>
                         <a href="https://github.com/yenle12345">
                             <span>GitHub: yenle12345</span>
                         </a>
                     </p>
 
-                    <p>
+                    <p id=l inkedin-link>
                         <a href="https://www.linkedin.com/in/l%C3%AA-h%E1%BB%93ng-y%E1%BA%BFn-2538a23b7/">
                             <span>LinkedIn: Lê Hồng Yến</span>
                         </a>
@@ -54,13 +53,17 @@
 
         </div>
 
-
-
-
-
-
     </div>
-    ```
+    <div class='language'>
+        <a href='#' onclick="changeLanguage('vi')">VN</a>
+        <a href='#' onclick="changeLanguage('en')">EN</a>
+        <script>
+            function changeLanguage(lang) {
+                localStorage.setItem('lang', lang);
+                location.reload();
+            }
+        </script>
+    </div>
 
 </body>
 
